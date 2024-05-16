@@ -563,7 +563,7 @@ SWEP.Animations = {
     ["idle"] = { 
         Source = "idle", 
 
-        Time = 100,       -- REMOVE TIME !!!!!!!!
+        -- Time = 100,       -- REMOVE TIME !!!!!!!!
 
         RareSource = {"tooidle1"},
         RareSourceChance = 0.0015,
