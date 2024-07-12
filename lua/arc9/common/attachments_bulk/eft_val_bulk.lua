@@ -9,8 +9,8 @@ ATT.CompactName = "6L24 10"
 ATT.Icon = Material("entities/eft_val_attachments/10.png", "mips smooth")
 ATT.Description = [[A 10-round polymer TsNIITochMash 6L24 9x39 magazine for the VSS sniper rifle.]]
 
-ATT.EFTErgoAdd = t
-ATT.CustomPros = { Ergonomics = "+t" }
+ATT.EFTErgoAdd = 2
+ATT.CustomPros = { Ergonomics = "+2" }
 -- ATT.EFTErgoAdd = -4
 -- ATT.CustomCons = { Ergonomics = "-4" }
 
@@ -445,7 +445,7 @@ ATT.CustomCons = { Ergonomics = "-1" }
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Category = {"eft_val_mount"}
+ATT.Category = {"eft_val_mount", "eft_vsk_mount"}
 
 ATT.Attachments = {
     {
