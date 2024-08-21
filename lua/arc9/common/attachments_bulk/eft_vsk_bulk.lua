@@ -40,10 +40,10 @@ ATT.CompactName = "VSK-94"
 ATT.Icon = Material("entities/eft_vsk_attachments/stock.png", "mips smooth")
 ATT.Description = [[A standard-issue stock for the VSK-94 marksman rifle. Manufactured by Tula KPB Instrument Design Bureau. ]]
 
-ATT.EFTErgoAdd = 15
-ATT.CustomPros = { Ergonomics = "+15" }
-ATT.RecoilMult = 0.77
-ATT.VisualRecoilMult = 0.77
+ATT.EFTErgoAdd = 5
+ATT.CustomPros = { Ergonomics = "+5" }
+ATT.RecoilMult = 0.72
+ATT.VisualRecoilMult = 0.72
 
 ATT.HasGrip = true
 
