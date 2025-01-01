@@ -4,7 +4,7 @@ local ATT = {}
 
 ATT = {}
 
-ATT.PrintName = "VSS 9x39 6L24 10-round magazine"
+ATT.PrintName = "VSS/VAL 9x39 6L24 10-round magazine"
 ATT.CompactName = "6L24 10"
 ATT.Icon = Material("entities/eft_val_attachments/10.png", "mips smooth")
 ATT.Description = [[A 10-round polymer TsNIITochMash 6L24 9x39 magazine for the VSS sniper rifle.]]
@@ -25,8 +25,8 @@ ATT.ClipSize = 10
 ATT.ChamberSize = 1
 ATT.SuppressEmptySuffix = false 
 ATT.DropMagazineAmount = 1
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_val_10.mdl"
-ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_val_10.mdl"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_val2_10.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_val2_10.mdl"
 
 ARC9.LoadAttachment(ATT, "eft_val_mag_10")
 
@@ -34,10 +34,10 @@ ARC9.LoadAttachment(ATT, "eft_val_mag_10")
 
 ATT = {}
 
-ATT.PrintName = "VSS 9x39 6L25 20-round magazine"
+ATT.PrintName = "VSS/VAL 9x39 6L25 20-round magazine (Plum)"
 ATT.CompactName = "6L25 20"
 ATT.Icon = Material("entities/eft_val_attachments/20.png", "mips smooth")
-ATT.Description = [[A 20-round polymer TsNIITochMash 6L25 9x39 magazine for the AS VAL special assault rifle.]]
+ATT.Description = [[A 20-round polymer TsNIITochMash 6L25 9x39 magazine for the AS VAL special assault rifle. Made out of plum-colored polymer, earning the nickname "Sliva" (Plum).]]
 
 ATT.EFTErgoAdd = -2
 ATT.CustomCons = { Ergonomics = "-2" }
@@ -53,8 +53,8 @@ ATT.ClipSize = 20
 ATT.ChamberSize = 1
 ATT.SuppressEmptySuffix = false 
 ATT.DropMagazineAmount = 1
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_val_20.mdl"
-ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_val_20.mdl"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_val2_20.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_val2_20.mdl"
 
 ARC9.LoadAttachment(ATT, "eft_val_mag_20")
 
@@ -62,13 +62,13 @@ ARC9.LoadAttachment(ATT, "eft_val_mag_20")
 
 ATT = {}
 
-ATT.PrintName = "9x39 SR3M.130 30-round magazine"
+ATT.PrintName = "VSS/VAL 9x39 SR3M.130 30-round magazine"
 ATT.CompactName = "SR3M 30"
 ATT.Icon = Material("entities/eft_val_attachments/30.png", "mips smooth")
 ATT.Description = [[A 30-round steel TsNIITochMash SR3M.130 magazine for 9x39 caliber SR-3M, VSS, and AS VAL.]]
 
-ATT.EFTErgoAdd = -5
-ATT.CustomCons = { Ergonomics = "-5" }
+ATT.EFTErgoAdd = -4
+ATT.CustomCons = { Ergonomics = "-4" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -81,10 +81,38 @@ ATT.ClipSize = 30
 ATT.ChamberSize = 1
 ATT.SuppressEmptySuffix = false 
 ATT.DropMagazineAmount = 1
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_val_30.mdl"
-ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_val_30.mdl"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_val2_30sr3.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_val2_30sr3.mdl"
 
 ARC9.LoadAttachment(ATT, "eft_val_mag_30")
+
+///////////////////////////////////////      eft_val_mag_30s
+
+ATT = {}
+
+ATT.PrintName = "VSS/VAL 9x39 30-round magazine"
+ATT.CompactName = "VAL 30"
+ATT.Icon = Material("entities/eft_val_attachments/30s.png", "mips smooth")
+ATT.Description = [[A 30-round polymer TsNIITochMash 9x39 magazine for the AS VAL special assault rifle.]]
+
+ATT.EFTErgoAdd = -3.5
+ATT.CustomCons = { Ergonomics = "-3.5" }
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_val_mag"}
+
+ATT.ActivateElements = {"mag30"}
+
+ATT.ClipSize = 30
+ATT.ChamberSize = 1
+ATT.SuppressEmptySuffix = false 
+ATT.DropMagazineAmount = 1
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_val2_30.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_val2_30.mdl"
+
+ARC9.LoadAttachment(ATT, "eft_val_mag_30s")
 
 
 
@@ -97,10 +125,10 @@ ATT.CompactName = "VSS"
 ATT.Icon = Material("entities/eft_val_attachments/wood.png", "mips smooth")
 ATT.Description = [[A standard-issue wooden stock for VSS Vintorez sniper rifles, manufactured by TsNIITochMash.]]
 
-ATT.EFTErgoAdd = 15
-ATT.CustomPros = { Ergonomics = "+15" }
-ATT.RecoilMult = 0.77
-ATT.VisualRecoilMult = 0.77
+ATT.EFTErgoAdd = 8
+ATT.CustomPros = { Ergonomics = "+8" }
+ATT.RecoilMult = 0.78
+ATT.VisualRecoilMult = 0.78
 
 ATT.HasGrip = true
 
@@ -120,10 +148,10 @@ ATT.CompactName = "AS VAL"
 ATT.Icon = Material("entities/eft_val_attachments/stock.png", "mips smooth")
 ATT.Description = [[A standard-issue foldable skeleton stock for AS VAL, manufactured by TsNIITochMash.]]
 
-ATT.EFTErgoAdd = 8
-ATT.CustomPros = { Ergonomics = "+8" }
-ATT.RecoilMult = 0.79
-ATT.VisualRecoilMult = 0.799
+ATT.EFTErgoAdd = 10
+ATT.CustomPros = { Ergonomics = "+10" }
+ATT.RecoilMult = 0.82
+ATT.VisualRecoilMult = 0.82
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -132,24 +160,24 @@ ATT.Category = {"eft_val_stock"}
 
 ARC9.LoadAttachment(ATT, "eft_val_stockk")
 
-///////////////////////////////////////      eft_val_dc_vss
+-- ///////////////////////////////////////      eft_val_dc_vss
 
-ATT = {}
+-- ATT = {}
 
-ATT.PrintName = "VSS dust cover"
-ATT.CompactName = "VSS"
-ATT.Icon = Material("entities/eft_val_attachments/dcvss.png", "mips smooth")
-ATT.Description = [[A standard-issue dust cover for VSS Vintorez sniper rifles, manufactured by TsNIITochMash.]]
+-- ATT.PrintName = "VSS dust cover"
+-- ATT.CompactName = "VSS"
+-- ATT.Icon = Material("entities/eft_val_attachments/dcvss.png", "mips smooth")
+-- ATT.Description = [[A standard-issue dust cover for VSS Vintorez sniper rifles, manufactured by TsNIITochMash.]]
 
-ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
+-- ATT.EFTErgoAdd = 2
+-- ATT.CustomPros = { Ergonomics = "+2" }
 
-ATT.SortOrder = 0
-ATT.MenuCategory = "ARC9 - EFT Attachments"
+-- ATT.SortOrder = 0
+-- ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Category = {"eft_val_dc"}
+-- ATT.Category = {"eft_val_dc"}
 
-ARC9.LoadAttachment(ATT, "eft_val_dc_vss")
+-- ARC9.LoadAttachment(ATT, "eft_val_dc_vss")
 
 ///////////////////////////////////////      eft_val_dc_val
 
@@ -170,21 +198,21 @@ ATT.Category = {"eft_val_dc"}
 
 ARC9.LoadAttachment(ATT, "eft_val_dc_val")
 
-///////////////////////////////////////      eft_val_rs_vss
+-- ///////////////////////////////////////      eft_val_rs_vss
 
-ATT = {}
+-- ATT = {}
 
-ATT.PrintName = "VSS rear sight"
-ATT.CompactName = "VSS"
-ATT.Icon = Material("entities/eft_val_attachments/rs.png", "mips smooth")
-ATT.Description = [[A standard vertically adjustable mechanical rear sight for the VSS Vintorez sniper rifle.]]
+-- ATT.PrintName = "VSS rear sight"
+-- ATT.CompactName = "VSS"
+-- ATT.Icon = Material("entities/eft_val_attachments/rs.png", "mips smooth")
+-- ATT.Description = [[A standard vertically adjustable mechanical rear sight for the VSS Vintorez sniper rifle.]]
 
-ATT.SortOrder = 0
-ATT.MenuCategory = "ARC9 - EFT Attachments"
+-- ATT.SortOrder = 0
+-- ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Category = {"eft_val_rs"}
+-- ATT.Category = {"eft_val_rs"}
 
-ARC9.LoadAttachment(ATT, "eft_val_rs_vss")
+-- ARC9.LoadAttachment(ATT, "eft_val_rs_vss")
 
 ///////////////////////////////////////      eft_val_rs_val
 
@@ -206,12 +234,15 @@ ARC9.LoadAttachment(ATT, "eft_val_rs_val")
 
 ATT = {}
 
-ATT.PrintName = "AS VAL pistol grip"
+ATT.PrintName = "AS VAL pistol grip (Plum)"
 ATT.CompactName = "AS VAL"
 ATT.Icon = Material("entities/eft_val_attachments/grip.png", "mips smooth")
-ATT.Description = [[A standard-issue polymer pistol grip for AS VAL, manufactured by TSNIITochMash.]]
+ATT.Description = [[A standard-issue polymer pistol grip for AS VAL, manufactured by TSNIITochMash. Made out of plum-colored polymer, earning the nickname "Sliva" (Plum).]]
 
 ATT.HasGrip = true
+
+ATT.EFTErgoAdd = 5
+ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -219,6 +250,69 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_val_grip"}
 
 ARC9.LoadAttachment(ATT, "eft_val_grip_std")
+
+///////////////////////////////////////      eft_val_grip_black
+
+ATT = {}
+
+ATT.PrintName = "AS VAL pistol grip (Black)"
+ATT.CompactName = "AS VAL"
+ATT.Icon = Material("entities/eft_val_attachments/gripb.png", "mips smooth")
+ATT.Description = [[A standard-issue polymer pistol grip for AS VAL, manufactured by TSNIITochMash.]]
+
+ATT.HasGrip = true
+
+ATT.EFTErgoAdd = 5
+ATT.CustomPros = { Ergonomics = "+5" }
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_val_grip"}
+
+ARC9.LoadAttachment(ATT, "eft_val_grip_black")
+
+///////////////////////////////////////      eft_val_hg_std
+
+ATT = {}
+
+ATT.PrintName = "VSS/VAL polymer handguard (Plum)"
+ATT.CompactName = "VSS/VAL"
+ATT.Icon = Material("entities/eft_val_attachments/hg.png", "mips smooth")
+ATT.Description = [[A polymer handguard for the AS Val and VSS Vintorez. Manufactured by TsNIITochMash. Made out of plum-colored polymer, earning the nickname "Sliva" (Plum).]]
+
+ATT.HasHG = true
+
+ATT.EFTErgoAdd = 5
+ATT.CustomPros = { Ergonomics = "+5" }
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_val_hg"}
+
+ARC9.LoadAttachment(ATT, "eft_val_hg_std")
+
+///////////////////////////////////////      eft_val_hg_black
+
+ATT = {}
+
+ATT.PrintName = "VSS/VAL polymer handguard (Black)"
+ATT.CompactName = "VSS/VAL"
+ATT.Icon = Material("entities/eft_val_attachments/hgb.png", "mips smooth")
+ATT.Description = [[A polymer handguard for the AS Val and VSS Vintorez. Manufactured by TsNIITochMash.]]
+
+ATT.HasHG = true
+
+ATT.EFTErgoAdd = 5
+ATT.CustomPros = { Ergonomics = "+5" }
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_val_hg"}
+
+ARC9.LoadAttachment(ATT, "eft_val_hg_black")
 
 ///////////////////////////////////////      eft_val_grip_rotor
 
@@ -230,6 +324,9 @@ ATT.Icon = Material("entities/eft_val_attachments/rotor.png", "mips smooth")
 ATT.Description = [[A pistol grip with an integrated Mil-Spec buffer tube for AS VAL, manufactured by Rotor 43.]]
 
 ATT.HasGrip = true
+
+ATT.EFTErgoAdd = 3
+ATT.CustomPros = { Ergonomics = "+3" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -249,51 +346,51 @@ ATT.Attachments = {
 ARC9.LoadAttachment(ATT, "eft_val_grip_rotor")
 
 
-///////////////////////////////////////      eft_val_supp_vss
+-- ///////////////////////////////////////      eft_val_supp_vss
 
 
-ATT = {}
+-- ATT = {}
 
-ATT.PrintName = "VSS 9x39 integral barrel-suppressor"
-ATT.CompactName = "VSS"
-ATT.Icon = Material("entities/eft_val_attachments/sup.png", "mips smooth")
-ATT.Description = [[A TsNIITochMash-manufactured integral barrel-suppressor module for VSS Vintorez.]]
+-- ATT.PrintName = "VSS 9x39 integral barrel-suppressor"
+-- ATT.CompactName = "VSS"
+-- ATT.Icon = Material("entities/eft_val_attachments/sup.png", "mips smooth")
+-- ATT.Description = [[A TsNIITochMash-manufactured integral barrel-suppressor module for VSS Vintorez.]]
 
-ATT.HasBarrel = true 
+-- ATT.HasBarrel = true 
 
-ATT.EFTErgoAdd = -5
-ATT.CustomCons = { Ergonomics = "-5" }
-ATT.RecoilMult = 0.86
-ATT.VisualRecoilMult = 0.86
--- ATT.PhysBulletMuzzleVelocityMult = 0.94
--- ATT.HeatCapacityMult = 1.01
+-- ATT.EFTErgoAdd = -5
+-- ATT.CustomCons = { Ergonomics = "-5" }
+-- ATT.RecoilMult = 0.86
+-- ATT.VisualRecoilMult = 0.86
+-- -- ATT.PhysBulletMuzzleVelocityMult = 0.94
+-- -- ATT.HeatCapacityMult = 1.01
 
-ATT.Silencer = true
-ATT.MuzzleParticle = "muzzleflash_suppressed"
-ATT.NoFlash = true
+-- ATT.Silencer = true
+-- ATT.MuzzleParticle = "muzzleflash_suppressed"
+-- ATT.NoFlash = true
 
-ATT.SortOrder = 0
-ATT.MenuCategory = "ARC9 - EFT Attachments"
+-- ATT.SortOrder = 0
+-- ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Category = {"eft_val_barrel"}
-ATT.Attachments = {
-    {
-        PrintName = "Mount",
-        Category = "eft_val_mount",
-        Pos = Vector(-3.25, 0, 0),
-        Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, 0, 0),
-    },
-    {
-        PrintName = "Rear Sight",
-        Category = "eft_val_rs",
-        Pos = Vector(-2.25, 0, -1),
-        Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, 0, 0),
-    },
-}
+-- ATT.Category = {"eft_val_barrel"}
+-- ATT.Attachments = {
+--     {
+--         PrintName = "Mount",
+--         Category = "eft_val_mount",
+--         Pos = Vector(-3.25, 0, 0),
+--         Ang = Angle(0, 0, 0),
+--         Icon_Offset = Vector(0, 0, 0),
+--     },
+--     {
+--         PrintName = "Rear Sight",
+--         Category = "eft_val_rs",
+--         Pos = Vector(-2.25, 0, -1),
+--         Ang = Angle(0, 0, 0),
+--         Icon_Offset = Vector(0, 0, 0),
+--     },
+-- }
 
-ARC9.LoadAttachment(ATT, "eft_val_supp_vss")
+-- ARC9.LoadAttachment(ATT, "eft_val_supp_vss")
 
 ///////////////////////////////////////      eft_val_supp_val
 
@@ -312,7 +409,6 @@ ATT.CustomCons = { Ergonomics = "-5" }
 ATT.RecoilMult = 0.86
 ATT.VisualRecoilMult = 0.86
 -- ATT.PhysBulletMuzzleVelocityMult = 0.94
--- ATT.HeatCapacityMult = 1.01
 
 ATT.Silencer = true
 ATT.MuzzleParticle = "muzzleflash_suppressed"
@@ -324,16 +420,16 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_val_barrel"}
 ATT.Attachments = {
     {
-        PrintName = "Mount",
-        Category = "eft_val_mount",
-        Pos = Vector(-3.25, 0, 0),
+        PrintName = "Rear Sight",
+        Category = "eft_val_rs",
+        Pos = Vector(-2.25, 0, -1),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Rear Sight",
-        Category = "eft_val_rs",
-        Pos = Vector(-2.25, 0, -1),
+        PrintName = "Mount",
+        Category = "eft_val_mount",
+        Pos = Vector(-3.25, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
@@ -445,7 +541,7 @@ ATT.CustomCons = { Ergonomics = "-1" }
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Category = {"eft_val_mount", "eft_vsk_mount"}
+ATT.Category = {"eft_val_mount", "eft_vsk_mount", "eft_sr3_mount"}
 
 ATT.Attachments = {
     {
@@ -459,6 +555,331 @@ ATT.Attachments = {
 
 
 ARC9.LoadAttachment(ATT, "eft_val_mount_b3")
+
+
+
+///////////////////////////////////////      eft_sr3_supp
+
+
+ATT = {}
+
+ATT.PrintName = "SR-3M 9x39 sound suppressor"
+ATT.CompactName = "SR-3ML"
+ATT.Icon = Material("entities/eft_val_attachments/srs.png", "mips smooth")
+ATT.Description = [[A standard-issue sound suppressor for the SR-3M assault rifle.]]
+
+-- ATT.HasBarrel = true 
+
+ATT.EFTErgoAdd = -5
+ATT.CustomCons = { Ergonomics = "-5" }
+ATT.RecoilMult = 0.86
+ATT.VisualRecoilMult = 0.86
+-- ATT.PhysBulletMuzzleVelocityMult = 0.94
+-- ATT.HeatCapacityMult = 1.01
+ATT.HeatCapacityMult = 0.75
+
+ATT.Silencer = true
+ATT.MuzzleParticle = "muzzleflash_suppressed"
+ATT.NoFlash = true
+ATT.MuzzleEffectQCA = 5
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_sr3_barrel"}
+ATT.Attachments = {
+    {
+        PrintName = "Mount",
+        Category = "eft_sr3_mount",
+        Pos = Vector(-2.1, 0, 0),
+        Ang = Angle(0, 0, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_sr3_supp")
+
+
+///////////////////////////////////////      eft_sr3_hg_std
+
+ATT = {}
+
+ATT.PrintName = "SR-3M polymer handguard (Plum)"
+ATT.CompactName = "SR-3M"
+ATT.Icon = Material("entities/eft_val_attachments/srhg.png", "mips smooth")
+ATT.Description = [[A standard-issue polymer handguard for the SR-3M assault rifle. Made out of plum-colored polymer, earning the nickname "Sliva" (Plum).]]
+
+ATT.HasHG = true
+ATT.HasBarrel = true
+
+ATT.EFTErgoAdd = 7
+ATT.CustomPros = { Ergonomics = "+7" }
+ATT.RecoilMult = 0.99
+ATT.VisualRecoilMult = 0.99
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_sr3_hg"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Foregrip",
+        Category = "eft_sr3_fg",
+        Pos = Vector(-4.0, 0, 2),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_sr3_hg_std")
+
+///////////////////////////////////////      eft_sr3_hg_black
+
+ATT = {}
+
+ATT.PrintName = "SR-3M polymer handguard (Black)"
+ATT.CompactName = "SR-3M"
+ATT.Icon = Material("entities/eft_val_attachments/srhgb.png", "mips smooth")
+ATT.Description = [[A standard-issue polymer handguard for the SR-3M assault rifle.]]
+
+ATT.HasHG = true
+ATT.HasBarrel = true
+
+ATT.EFTErgoAdd = 7
+ATT.CustomPros = { Ergonomics = "+7" }
+ATT.RecoilMult = 0.99
+ATT.VisualRecoilMult = 0.99
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_sr3_hg"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Foregrip",
+        Category = "eft_sr3_fg",
+        Pos = Vector(-4.0, 0, 2),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_sr3_hg_black")
+
+///////////////////////////////////////      eft_sr3_hg_rail
+
+ATT = {}
+
+ATT.PrintName = "SR-3M railed polymer handguard (Black)"
+ATT.CompactName = "SR-3M rail"
+ATT.Icon = Material("entities/eft_val_attachments/srhgr.png", "mips smooth")
+ATT.Description = [[A polymer handguard with Zenit Picatinny rails for the SR-3M assault rifle.]]
+
+ATT.HasHG = true
+ATT.HasBarrel = true
+
+ATT.EFTErgoAdd = 8
+ATT.CustomPros = { Ergonomics = "+8" }
+ATT.RecoilMult = 0.99
+ATT.VisualRecoilMult = 0.99
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_sr3_hg"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Foregrip",
+        Category = "eft_sr3_fg",
+        Pos = Vector(-4.0, 0, 2),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "Optic",
+        Category = {"eft_optic_small", "eft_optic_medium", "eft_tactical_top"},
+        RejectAttachments = {
+            ["eft_optic_553"] = true,
+            ["eft_optic_boss"] = true,
+            ["eft_optic_krechet"] = true,
+            ["eft_optic_kobra"] = true,
+            ["eft_optic_pk120"] = true,
+        },
+        Pos = Vector(-2.3, 0, -1.7),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExcludeElements = {"IronsBlockingSight"},
+        ExtraSightDistance = 6,
+    },
+    {
+        PrintName = "Tactical R",
+        Category = {"eft_tactical_pistol"},
+        Pos = Vector(-3.25, 1.05, -0.2),
+        Ang = Angle(0, 0, 90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+
+ARC9.LoadAttachment(ATT, "eft_sr3_hg_rail")
+
+///////////////////////////////////////      eft_sr3_fg_std
+
+ATT = {}
+
+ATT.PrintName = "SR-3M polymer foregrip (Plum)"
+ATT.CompactName = "SR-3M"
+ATT.Icon = Material("entities/eft_val_attachments/fg.png", "mips smooth")
+ATT.Description = [[A standard-issue polymer foregrip for the SR-3M assault rifle. Made out of plum-colored polymer, earning the nickname "Sliva" (Plum).]]
+
+-- ATT.HasHG = true
+
+ATT.EFTErgoAdd = 5
+ATT.CustomPros = { Ergonomics = "+5" }
+ATT.RecoilMult = 0.99
+ATT.VisualRecoilMult = 0.99
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_sr3_fg"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/foregrip_sr3m_lhik.mdl"
+ATT.LHIK = true
+ATT.ModelOffset = Vector(0.1, 0, 1.5)
+ATT.ModelAngleOffset = Angle(0, 90, 0)
+
+ARC9.LoadAttachment(ATT, "eft_sr3_fg_std")
+
+///////////////////////////////////////      eft_sr3_fg_black
+
+ATT = {}
+
+ATT.PrintName = "SR-3M polymer foregrip (Black)"
+ATT.CompactName = "SR-3M"
+ATT.Icon = Material("entities/eft_val_attachments/fgb.png", "mips smooth")
+ATT.Description = [[A standard-issue polymer foregrip for the SR-3M assault rifle.]]
+
+-- ATT.HasHG = true
+
+ATT.EFTErgoAdd = 5
+ATT.CustomPros = { Ergonomics = "+5" }
+ATT.RecoilMult = 0.99
+ATT.VisualRecoilMult = 0.99
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_sr3_fg"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/foregrip_sr3m_lhik.mdl"
+ATT.LHIK = true
+ATT.ModelOffset = Vector(0.1, 0, 1.5)
+ATT.ModelAngleOffset = Angle(0, 90, 0)
+
+ARC9.LoadAttachment(ATT, "eft_sr3_fg_black")
+
+
+///////////////////////////////////////      eft_mount_dovetail_sr3mp
+
+
+ATT = {}
+
+ATT.PrintName = "SR-3MP dovetail side rail"
+ATT.CompactName = "SR-3MP D"
+ATT.Icon = Material("entities/eft_val_attachments/dt.png", "mips smooth")
+ATT.Description = [[A special mount for installing optics and other accessories to the SR-3MP assault rifle. Manufactured by TsNIITochMash. Black version.]]
+
+ATT.Model = "models/weapons/arc9_eft_shared/atts/mounts/mount_dovetail_sr3mp.mdl"
+
+ATT.Category = {"eft_mount_dovetail_sr3"}
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = -1
+ATT.CustomCons = { Ergonomics = "-1" }
+ATT.ActivateElements = {"nolongrear"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Optic",
+        Category = {"eft_optic_medium", "eft_optic_large_nosniper", "eft_optic_small"},
+        Pos = Vector(2, 0.77, -1.55),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        -- ExtraSightDistance = 8
+    },
+    {
+        PrintName = "Tactical L",
+        Category = {"eft_tactical", "eft_tactical_top", "eft_tactical_top_big"},
+        Pos = Vector(0, -0.34, -0.48),
+        Ang = Angle(0, 0, -90 + 15),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+
+ATT.ModelOffset = Vector(0, -1.1, 0)
+ATT.ModelAngleOffset = Angle(0, 90, 0)
+
+ARC9.LoadAttachment(ATT, "eft_mount_dovetail_sr3mp")
+
+///////////////////////////////////////      eft_mount_dovetail_sr3mpp
+
+
+ATT = {}
+
+ATT.PrintName = "SR-3MP dovetail side rail (Plum)"
+ATT.CompactName = "SR-3MP D"
+ATT.Icon = Material("entities/eft_val_attachments/dtp.png", "mips smooth")
+ATT.Description = [[A special mount for installing optics and other accessories to the SR-3MP assault rifle. Manufactured by TsNIITochMash. Plum version.]]
+
+ATT.Model = "models/weapons/arc9_eft_shared/atts/mounts/mount_dovetail_sr3mp.mdl"
+ATT.ModelSkin = 1
+
+ATT.Category = {"eft_mount_dovetail_sr3"}
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = -1
+ATT.CustomCons = { Ergonomics = "-1" }
+ATT.ActivateElements = {"nolongrear"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Optic",
+        Category = {"eft_optic_medium", "eft_optic_large_nosniper", "eft_optic_small"},
+        Pos = Vector(2, 0.77, -1.55),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        -- ExtraSightDistance = 8
+    },
+    {
+        PrintName = "Tactical L",
+        Category = {"eft_tactical", "eft_tactical_top", "eft_tactical_top_big"},
+        Pos = Vector(0, -0.34, -0.48),
+        Ang = Angle(0, 0, -90 + 15),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ATT.ModelOffset = Vector(0, -1.1, 0)
+ATT.ModelAngleOffset = Angle(0, 90, 0)
+
+ARC9.LoadAttachment(ATT, "eft_mount_dovetail_sr3mpp")
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

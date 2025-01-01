@@ -7,6 +7,8 @@ SWEP.Base = "arc9_eft_asval"
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Escape From Tarkov"
 
+SWEP.SaveBase = "arc9_eft_vss2"
+
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_snip")
 SWEP.Class = ARC9:GetPhrase("eft_class_weapon_marks")
 
@@ -29,20 +31,15 @@ SWEP.Firemodes = {
 }
 
 SWEP.Attachments = {
-    {
-        Installed = "eft_val_supp_vss",
-        SubAttachments = {
-            {},
-            {
-                Installed = "eft_val_rs_vss",
-            }
-        }
-    },
-    _,
     _,
     {
-        Installed = "eft_val_dc_vss",
+        Installed = "eft_val_hg_black",
     },
+    _,
+    {
+        Installed = false
+    },
+    _,
     _,
     {
         Category = "eft_vss_stock",
