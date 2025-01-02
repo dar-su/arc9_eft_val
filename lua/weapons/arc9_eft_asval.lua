@@ -12,7 +12,7 @@ SWEP.Credits = {
     -- [ARC9:GetPhrase("eft_trivia_arc9") .. "4"] = "Arctic",
 }
 
-SWEP.SaveBase = "arc9_eft_asval2"
+SWEP.SaveBase = "arc9_eft_asval2" -- this gun got full rework so old presets aren't compatible
 
 ARC9:AddPhrase("eft_weapon_asval", "AS VAL", "en")
 ARC9:AddPhrase("eft_weapon_asval", "АС ВАЛ", "ru")
@@ -365,7 +365,7 @@ SWEP.LayerSound = path .. "fire_new/vss_loop_closetail.ogg"
 SWEP.ShootSoundSilenced = { path .. "fire_new/vss_loop_close1.ogg", path .. "fire_new/vss_loop_close2.ogg", path .. "fire_new/vss_loop_close3.ogg", path .. "fire_new/vss_loop_close4.ogg" }
 SWEP.LayerSoundSilenced = path .. "fire_new/vss_loop_closetail.ogg"
 
-SWEP.ShootSoundIndoor = { path .. "fire_new/vss_loop_indoor_close1.ogg", path .. "fire_new/vss_loop_indoor_close2.ogg", path .. "fire_new/vss_loop_indoor_close3.ogg", path .. "fire_new/vss_loop_indoor_close4.ogg" }
+SWEP.ShootSoundIndoor = { path .. "fire_new/vss_loop_indoor_close1.ogg", path .. "fire_new/vss_loop_indoor_close2.ogg", path .. "fire_new/vss_loop_indoor_close4.ogg" }
 SWEP.LayerSoundIndoor = path .. "fire_new/vss_loop_indoor_close_tail.ogg"
 
 SWEP.ShootSoundSilencedIndoor = { path .. "fire_new/vss_loop_indoor_close1.ogg", path .. "fire_new/vss_loop_indoor_close2.ogg", path .. "fire_new/vss_loop_indoor_close3.ogg", path .. "fire_new/vss_loop_indoor_close4.ogg" }

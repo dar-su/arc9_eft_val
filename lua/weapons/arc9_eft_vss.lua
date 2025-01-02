@@ -7,7 +7,7 @@ SWEP.Base = "arc9_eft_asval"
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Escape From Tarkov"
 
-SWEP.SaveBase = "arc9_eft_vss2"
+SWEP.SaveBase = "arc9_eft_vss2" -- this gun got full rework so old presets aren't compatible
 
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_snip")
 SWEP.Class = ARC9:GetPhrase("eft_class_weapon_marks")
