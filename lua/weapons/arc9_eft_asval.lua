@@ -160,6 +160,7 @@ SWEP.DamageLookupTable = {
 
 SWEP.MalfunctionMeanShotsToFail = 500
 SWEP.MalfunctionMeanShotsToFailMultHot = 0
+SWEP.MalfunctionWait = -1
 SWEP.HeatCapacity = 47
 SWEP.HeatDissipation = 2.0
 
@@ -194,7 +195,7 @@ SWEP.DistantShootSoundSilencedIndoor = { path .. "fire_new/vss_loop_indoor_dista
 
 ------------------------- |||           Dropped magazines            ||| -------------------------
 
-SWEP.DropMagazineTime = 0.63
+SWEP.DropMagazineTime = 0.63 * 28/24
 SWEP.DropMagazineQCA = 4
 SWEP.DropMagazinePos = Vector(0, 0, 0)
 SWEP.DropMagazineAng = Angle(-180, 90, 0)
@@ -453,7 +454,8 @@ SWEP.Animations = {
         FireASAP = true,
         MagSwapTime = 1.0,
         EventTable = rst_reload,
-        IKTimeLine = rik_reload
+        IKTimeLine = rik_reload,
+        Mult = 28/24
     },
     ["reload_empty_0"] = {
         Source = {"reload_empty0_0", "reload_empty0_1"},
@@ -461,7 +463,8 @@ SWEP.Animations = {
         FireASAP = true,
         MagSwapTime = 0.8,
         EventTable = rst_reloadempty,
-        IKTimeLine = rik_reloadempty
+        IKTimeLine = rik_reloadempty,
+        Mult = 28/24
     },
     ["1_reload_empty_0"] = { -- seperate cuz differeitn lhik
         Source = "reload_empty0_2",
@@ -469,7 +472,8 @@ SWEP.Animations = {
         FireASAP = true,
         MagSwapTime = 0.8,
         EventTable = rst_reloadempty,
-        IKTimeLine = rik_reloadempty2
+        IKTimeLine = rik_reloadempty2,
+        Mult = 28/24
     },
 
     ["reload_1"] = {
@@ -478,7 +482,8 @@ SWEP.Animations = {
         FireASAP = true,
         MagSwapTime = 1.0,
         EventTable = rst_reload,
-        IKTimeLine = rik_reload
+        IKTimeLine = rik_reload,
+        Mult = 28/24
     },
     ["reload_empty_1"] = {
         Source = {"reload_empty1_0", "reload_empty1_1"},
@@ -486,7 +491,8 @@ SWEP.Animations = {
         FireASAP = true,
         MagSwapTime = 0.8,
         EventTable = rst_reloadempty,
-        IKTimeLine = rik_reloadempty
+        IKTimeLine = rik_reloadempty,
+        Mult = 28/24
     },
     ["1_reload_empty_1"] = {
         Source = "reload_empty1_2",
@@ -494,7 +500,8 @@ SWEP.Animations = {
         FireASAP = true,
         MagSwapTime = 0.8,
         EventTable = rst_reloadempty,
-        IKTimeLine = rik_reloadempty2
+        IKTimeLine = rik_reloadempty2,
+        Mult = 28/24
     },
 
     ["reload_single"] = {
@@ -520,6 +527,7 @@ SWEP.Animations = {
             { t = 0.74, lhik = 1 },
             { t = 1, lhik = 1 },
         },
+        Mult = 26/24
     },    
     
 
@@ -563,14 +571,14 @@ SWEP.Animations = {
     ["jam1"] = {
         Source = "jam_shell", -- jam shell
         EventTable = {
-            { s = randspin, t = 0.05 },
-            { s = randspin, t = 0.73 },
-            { s = randspin, t = 1.25 },
-            { s = path .. "ak_jam_shell_grab.ogg", t = 1.85 },
-            { s = path .. "ak_jam_shell_remove.ogg", t = 2.53 },
-            { s = randspin, t = 2.6 },
-            { s = randspin, t = 3.43 },
-            { s = ARC9EFT.Shells556, t = 3.1 },
+            { s = randspin, t = 0.05 + 7/24 },
+            { s = randspin, t = 0.73 + 7/24 },
+            { s = randspin, t = 1.25 + 7/24 },
+            { s = path .. "ak_jam_shell_grab.ogg", t = 1.85 + 7/24 },
+            { s = path .. "ak_jam_shell_remove.ogg", t = 2.53 + 7/24 },
+            { s = randspin, t = 2.6 + 7/24 },
+            { s = randspin, t = 3.43 + 7/24 },
+            { s = ARC9EFT.Shells556, t = 3.1 + 7/24 },
         },
         -- EjectAt = 4.7,        
         IKTimeLine = {
@@ -581,19 +589,19 @@ SWEP.Animations = {
     ["jam2"] = {
         Source = "jam_feed", -- jam feed
         EventTable = {
-            { s = randspin, t = 0.05 },
-            { s = randspin, t = 0.73 },
-            { s = randspin, t = 1.25 },
+            { s = randspin, t = 0.05 + 7/24 },
+            { s = randspin, t = 0.73 + 7/24 },
+            { s = randspin, t = 1.25 + 7/24 },
 
-            { s = path .. "ak_jam_stuckbolt_in1.ogg", t = 1.75 },
-            { s = path .. "longweapon_jam_rattle3.ogg", t = 2.2 },
-            { s = path .. "longweapon_jam_rattle1.ogg", t = 2.63 },
-            { s = path .. "longweapon_jam_rattle3.ogg", t = 3.1 },
-            { s = path .. "ak_jam_feedfault_roundaftercharge.ogg", t = 3.2 },
-            { s = randspin, t = 3.7 },
-            { s = path .. "val_boltin.ogg", t = 3.83},
-            { s = randspin, t = 4.32 },
-            { s = ARC9EFT.Shells556, t = 4.1 },
+            { s = path .. "ak_jam_stuckbolt_in1.ogg", t = 1.75 + 7/24 },
+            { s = path .. "longweapon_jam_rattle3.ogg", t = 2.2 + 7/24 },
+            { s = path .. "longweapon_jam_rattle1.ogg", t = 2.6 + 7/243 },
+            { s = path .. "longweapon_jam_rattle3.ogg", t = 3.1 + 7/24 },
+            { s = path .. "ak_jam_feedfault_roundaftercharge.ogg", t = 3.2 + 7/24 },
+            { s = randspin, t = 3.7 + 7/24 },
+            { s = path .. "val_boltin.ogg", t = 3.83 + 7/24 },
+            { s = randspin, t = 4.32 + 7/24 },
+            { s = ARC9EFT.Shells556, t = 4.1 + 7/24 },
         },
         -- EjectAt = 2.55,
             IKTimeLine = {
@@ -604,21 +612,21 @@ SWEP.Animations = {
     ["jam3"] = {
         Source = "jam_hardjam", -- jam hard
         EventTable = {
-            { s = randspin, t = 0.05 },
-            { s = randspin, t = 0.73 },
-            { s = randspin, t = 1.25 },
+            { s = randspin, t = 0.05 + 7/24 },
+            { s = randspin, t = 0.73 + 7/24 },
+            { s = randspin, t = 1.25 + 7/24 },
 
-            { s = path .. "ak_jam_stuckbolt_in1.ogg", t = 1.88 },
-            { s = path .. "ak_jam_stuckbolt_in2.ogg", t = 2.25 },
-            { s = path .. "ak_jam_stuckbolt_in3.ogg", t = 2.8 },
+            { s = path .. "ak_jam_stuckbolt_in1.ogg", t = 1.88 + 7/24 },
+            { s = path .. "ak_jam_stuckbolt_in2.ogg", t = 2.2 + 7/245 },
+            { s = path .. "ak_jam_stuckbolt_in3.ogg", t = 2.8 + 7/24 },
             { s = randspin, t = 2.82 },
-            { s = path .. "ak_jam_stuckbolt_out_hit2.ogg", t = 3.48 }, -- actual
-            { s = path .. "ak_jam_stuckbolt_in_starting.ogg", t = 4.15 },
-            { s = path .. "val_boltout.ogg", t = 4.5},
-            { s = path .. "val_boltin.ogg", t = 4.74},
-            { s = randspin, t = 5.09 },
+            { s = path .. "ak_jam_stuckbolt_out_hit2.ogg", t = 3.48 + 7/24 }, -- actual
+            { s = path .. "ak_jam_stuckbolt_in_starting.ogg", t = 4.15 + 7/24 },
+            { s = path .. "val_boltout.ogg", t = 4.5 + 7/24 },
+            { s = path .. "val_boltin.ogg", t = 4.74 + 7/24 },
+            { s = randspin, t = 5.09 + 7/24 },
         },
-        EjectAt = 4.58,
+        EjectAt = 4.58 + 7/24,
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 1, lhik = 1 },
@@ -627,18 +635,18 @@ SWEP.Animations = {
     ["jam4"] = {
         Source = "jam_softjam", -- jam soft
         EventTable = {
-            { s = randspin, t = 0.05 },
-            { s = randspin, t = 0.73 },
-            { s = randspin, t = 1.25 },
+            { s = randspin, t = 0.05 + 7/24 },
+            { s = randspin, t = 0.73 + 7/24 },
+            { s = randspin, t = 1.25 + 7/24 },
 
-            { s = path .. "ak_jam_stuckbolt_in3.ogg", t = 1.81 },
-            { s = path .. "ak_jam_stuckbolt_in2.ogg", t = 2.13 },
-            { s = path .. "ak_jam_stuckbolt_in_starting.ogg", t = 2.95 },
-            { s = path .. "val_boltout.ogg", t = 3.08},
-            { s = path .. "val_boltin.ogg", t = 3.28},
-            { s = randspin, t = 3.62 },
+            { s = path .. "ak_jam_stuckbolt_in3.ogg", t = 1.81 + 7/24 },
+            { s = path .. "ak_jam_stuckbolt_in2.ogg", t = 2.13 + 7/24 },
+            { s = path .. "ak_jam_stuckbolt_in_starting.ogg", t = 2.95 + 7/24 },
+            { s = path .. "val_boltout.ogg", t = 3.08 + 7/24 },
+            { s = path .. "val_boltin.ogg", t = 3.28 + 7/24 },
+            { s = randspin, t = 3.62 + 7/24 },
         },
-        EjectAt = 3.13,
+        EjectAt = 3.13 + 7/24,
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 1, lhik = 1 },
