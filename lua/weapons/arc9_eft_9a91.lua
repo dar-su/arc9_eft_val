@@ -32,7 +32,7 @@ SWEP.WorldModel = "models/weapons/w_rif_ak47.mdl"
 ------------------------- |||           Offsets            ||| -------------------------
 
 SWEP.WorldModelOffset = {
-    Pos = Vector(-8.3, 5.5, -6),
+    Pos = Vector(-8, 5.5, -4.85),
     Ang = Angle(-7, 0, 180),
     TPIKPos = Vector(-4, 4, -4), -- rpg
     TPIKAng = Angle(-11.5, 0, 180),
@@ -75,7 +75,7 @@ SWEP.BarrelLength = 50
 SWEP.Ammo = "ar2"
 SWEP.Firemodes = {
     { Mode = -1, PoseParam = 1},
-    { Mode = 1, PoseParam = 2 }
+    { Mode = 1, RPM = 450, PoseParam = 2 }
 }
 
 SWEP.Slot = 2
@@ -179,7 +179,6 @@ SWEP.HeatDissipation = 2.0
 ------------------------- |||           Minor stuff            ||| -------------------------
 
 SWEP.MuzzleParticle = "muzzleflash_4"
-SWEP.AfterShotParticle = "barrel_smoke"
 SWEP.ShellModel = "models/weapons/arc9/darsu_eft/shells/9x39.mdl"
 SWEP.ShellSounds = ARC9EFT.Shells556
 

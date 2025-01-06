@@ -32,7 +32,7 @@ SWEP.WorldModel = "models/weapons/w_rif_ak47.mdl"
 ------------------------- |||           Offsets            ||| -------------------------
 
 SWEP.WorldModelOffset = {
-    Pos = Vector(-8.3, 5.5, -6),
+    Pos = Vector(-10.5, 5.5, -5),
     Ang = Angle(-7, 0, 180),
     TPIKPos = Vector(-4, 4, -4), -- rpg
     TPIKAng = Angle(-11.5, 0, 180),
@@ -52,6 +52,14 @@ SWEP.CustomizePos = Vector(18.2, 26, 3.7)
 SWEP.CustomizeSnapshotFOV = 95
 SWEP.CustomizeRotateAnchor = Vector(18.2, -4.25, -3.7)
 
+-- this thing can one hand sprint
+local handupang, handuppos, handupholdtype = Angle(-2, 40, -7), Vector(1, -5, -6), "normal"
+SWEP.OneHandedSprint = true
+SWEP.OneHandedSprintHook = function(self, old) if self:GetValue("HasStock") then return false end end
+SWEP.SprintAngHook = function(self, old) if !self:GetValue("HasStock") then return handupang end end
+SWEP.SprintPosHook = function(self, old) if !self:GetValue("HasStock") then return handuppos end end
+SWEP.HoldTypeSprintHook = function(self, old) if !self:GetValue("HasStock") then return handupholdtype end end
+
 ------------------------- |||           Stats            ||| -------------------------
 
 SWEP.Spread = 3.438 * ARC9.MOAToAcc
@@ -61,7 +69,7 @@ SWEP.BarrelLength = 50
 SWEP.Ammo = "ar2"
 SWEP.Firemodes = {
     { Mode = -1, PoseParam = 2},
-    { Mode = 1, PoseParam = 1 }
+    { Mode = 1, RPM = 450, PoseParam = 1 }
 }
 
 SWEP.Slot = 2
@@ -167,7 +175,6 @@ SWEP.HeatDissipation = 2.0
 ------------------------- |||           Minor stuff            ||| -------------------------
 
 SWEP.MuzzleParticle = "muzzleflash_4"
-SWEP.AfterShotParticle = "barrel_smoke"
 SWEP.ShellModel = "models/weapons/arc9/darsu_eft/shells/9x39.mdl"
 SWEP.ShellSounds = ARC9EFT.Shells556
 

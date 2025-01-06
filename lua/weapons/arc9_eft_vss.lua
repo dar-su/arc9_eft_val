@@ -26,8 +26,8 @@ SWEP.Spread = 3.266 * ARC9.MOAToAcc
 SWEP.DefaultElements = {"vssuwu"} -- owo
 
 SWEP.Firemodes = {
-    { Mode = 1, PoseParam = 1 },
-    { Mode = -1, PoseParam = 2}
+    { Mode = 1, RPM = 450, PoseParam = 1 },
+    { Mode = -1, PoseParam = 2, RPM = 900}
 }
 
 SWEP.Attachments = {

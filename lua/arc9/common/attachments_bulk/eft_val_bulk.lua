@@ -131,6 +131,7 @@ ATT.RecoilMult = 0.78
 ATT.VisualRecoilMult = 0.78
 
 ATT.HasGrip = true
+ATT.HasStock = true
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -152,6 +153,8 @@ ATT.EFTErgoAdd = 10
 ATT.CustomPros = { Ergonomics = "+10" }
 ATT.RecoilMult = 0.82
 ATT.VisualRecoilMult = 0.82
+
+ATT.HasStock = true
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -328,6 +331,8 @@ ATT.HasGrip = true
 ATT.EFTErgoAdd = 3
 ATT.CustomPros = { Ergonomics = "+3" }
 
+ATT.HasStock = true
+
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
@@ -465,11 +470,13 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, -1),
     },
     {
-        PrintName = "Tactical B", -- check later??
+        PrintName = "Tactical B",
         Category = {"eft_bipod"},
-        Pos = Vector(-1.5, 0, 1.15),
+        Pos = Vector(-1.0, 0, 1.15),
         Ang = Angle(0, 0, 180),
         Icon_Offset = Vector(0, 0, 0),
+        MergeSlots = {1}, -- i hope mergeslots works in atts
+        Hidden = true
     },
     {
         PrintName = "Tactical R",
