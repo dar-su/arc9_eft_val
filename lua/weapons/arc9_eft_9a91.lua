@@ -85,11 +85,11 @@ SWEP.Slot = 2
 SWEP.Recoil = 0.8 -- general multiplier of main recoil
 
 SWEP.RecoilUp   = 3.25  -- up recoil
-SWEP.RecoilSide = 0.8 -- sideways recoil
+SWEP.RecoilSide = 1.2 -- sideways recoil
 SWEP.RecoilRandomUp   = 0.55 -- random up/down
 SWEP.RecoilRandomSide = 0.65   -- random left/right
 
-SWEP.RecoilAutoControl = 3.1 -- autocompenstaion, could be cool if set to high but it also affects main recoil
+SWEP.RecoilAutoControl = 3.9 -- autocompenstaion, could be cool if set to high but it also affects main recoil
 
 -- visual recoil   aka visrec
 SWEP.VisualRecoil = 0.69 -- general multiplier for it
@@ -100,15 +100,15 @@ SWEP.EFT_VisualRecoilSide_BURST_SEMI = 0.001 -- left/right tilt when semi/burst
 SWEP.VisualRecoilSide                 = 0.08   --   when fullautoing
 SWEP.VisualRecoilRoll = 4 -- roll tilt, a visual thing
 
-SWEP.VisualRecoilPunch = 1 -- How far back visrec moves the gun
-SWEP.VisualRecoilPunchSights = 3 -- same but in sights only
+SWEP.VisualRecoilPunch = 0.3 -- How far back visrec moves the gun
+SWEP.VisualRecoilPunchSights = 5 -- same but in sights only
 
 SWEP.VisualRecoilDampingConst = 100  -- spring settings, this is speed of visrec
 SWEP.VisualRecoilSpringPunchDamping = 5 -- the less this is the more wobbly gun moves
 SWEP.VisualRecoilSpringMagnitude = 0.5 -- some third element of spring, high values make gun shake asf on low fps
 
 SWEP.VisualRecoilPositionBumpUpHipFire = 0.1 -- gun will go down each shot by this value
-SWEP.VisualRecoilPositionBumpUp = -0.15 -- same but in sights
+SWEP.VisualRecoilPositionBumpUp = -0.3 -- same but in sights
 SWEP.VisualRecoilPositionBumpUpRTScope = 0.05 -- same but in rt scopes, you probably should keep it same as sight value, i guess it doesn't matter anymore after recoil update
 
 SWEP.EFT_ShotsToSwitchToFullAutoBehaviur = 3 -- how many shots for switch to fullauto stats from semi/burst, + 2 shots afterwards are lerping. you probably should not touch this but ok
@@ -117,7 +117,7 @@ SWEP.RecoilKick = 0.3 -- camera roll each shot + makes camera go more up when fu
 
 SWEP.VisualRecoilCenter = Vector(4.28, 19, -3)
 SWEP.SubtleVisualRecoil = 0.75
-SWEP.SubtleVisualRecoilDirection = 2.75
+SWEP.SubtleVisualRecoilDirection = 2.0
 SWEP.SubtleVisualRecoilSpeed = 1
 
 ------------------------- |||           Damage            ||| -------------------------
