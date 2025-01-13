@@ -644,6 +644,13 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
+    {
+        PrintName = "Mount",
+        Category = "eft_sr3_hg_mount",
+        Pos = Vector(-4.0, 0, -1),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
 }
 
 ARC9.LoadAttachment(ATT, "eft_sr3_hg_std")
@@ -675,6 +682,13 @@ ATT.Attachments = {
         PrintName = "Foregrip",
         Category = "eft_sr3_fg",
         Pos = Vector(-4.0, 0, 2),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "Mount",
+        Category = "eft_sr3_hg_mount",
+        Pos = Vector(-4.0, 0, -1),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
@@ -884,6 +898,75 @@ ATT.ModelAngleOffset = Angle(0, 90, 0)
 ARC9.LoadAttachment(ATT, "eft_mount_dovetail_sr3mpp")
 
 
+///////////////////////////////////////      eft_sr3_mount_hg
+
+
+ATT = {}
+
+ATT.PrintName = "SR-3MP side rails (Black)"
+ATT.CompactName = "SR-3MP side"
+ATT.Icon = Material("entities/eft_val_attachments/dt.png", "mips smooth")
+ATT.Description = [[Side rails for the SR-3MP assault rifle that allow installation of additional tactical equipment. Manufactured by TsNIITochMash. Black version.]]
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_sr3_hg_mount"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Tactical R",
+        Category = {"eft_tactical_pistol"},
+        Pos = Vector(0.8, 1.1, -0.07),
+        Ang = Angle(0, 0, 90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "Tactical L",
+        Category = {"eft_tactical_pistol"},
+        Pos = Vector(0.3, -1.1, -0.07),
+        Ang = Angle(0, 0, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+
+ARC9.LoadAttachment(ATT, "eft_sr3_mount_hg")
+
+///////////////////////////////////////      eft_sr3_mount_hgp
+
+
+ATT = {}
+
+ATT.PrintName = "SR-3MP side rails (Plum)"
+ATT.CompactName = "SR-3MP side"
+ATT.Icon = Material("entities/eft_val_attachments/dtp.png", "mips smooth")
+ATT.Description = [[Side rails for the SR-3MP assault rifle that allow installation of additional tactical equipment. Manufactured by TsNIITochMash. Made out of plum-colored material, which has earned the nickname "Sliva" (Plum).]]
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_sr3_hg_mount"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Tactical R",
+        Category = {"eft_tactical_pistol"},
+        Pos = Vector(0.8, 1.1, -0.07),
+        Ang = Angle(0, 0, 90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "Tactical L",
+        Category = {"eft_tactical_pistol"},
+        Pos = Vector(0.3, -1.1, -0.07),
+        Ang = Angle(0, 0, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+
+ARC9.LoadAttachment(ATT, "eft_sr3_mount_hgp")
 
 
 

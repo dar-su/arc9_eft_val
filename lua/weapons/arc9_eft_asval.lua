@@ -731,6 +731,9 @@ SWEP.AttachmentElements = {
     ["eft_sr3_supp"] = { Bodygroups = { {5, 1} } },
     ["eft_sr3_fg_std"] = { Bodygroups = { {2, 2} } },
     ["eft_sr3_fg_black"] = { Bodygroups = { {2, 1} } },
+
+    ["eft_sr3_mount_hg"] = { Bodygroups = { {9, 1} } },
+    ["eft_sr3_mount_hgp"] = { Bodygroups = { {9, 2} } },
 }
 
 SWEP.Attachments = {
@@ -788,7 +791,7 @@ SWEP.Attachments = {
         PrintName = "Dovetail",
         Category = {"eft_mount_dovetail", "eft_mount_dovetail_svd", "eft_mount_dovetail_sr3"},
         Bone = "mod_mount_000",
-        Pos = Vector(0.05, 1.05, 0.49),
+        Pos = Vector(0.05, 0.05, 0.49),
         Ang = Angle(0, -90, 0),
         ExcludeElements = false ,
         -- ExcludeElements = {"railedcover", "nodovetail"},
