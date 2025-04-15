@@ -34,7 +34,7 @@ SWEP.WorldModel = "models/weapons/w_rif_ak47.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-10.5, 5.5, -5),
     Ang = Angle(-7, 0, 180),
-    TPIKPos = Vector(-4, 4, -4), -- rpg
+    TPIKPos = Vector(-8, 5, -4), -- rpg
     TPIKAng = Angle(-11.5, 0, 180),
     Scale = 1
 }
