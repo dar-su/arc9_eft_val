@@ -5,21 +5,18 @@ SWEP.Spawnable = true
 
 ------------------------- |||           Trivia            ||| -------------------------
 
-ARC9:AddPhrase("eft_weapon_9a91", "KBP 9A-91", "en")
-ARC9:AddPhrase("eft_weapon_9a91", "КБП 9А-91", "ru")
-ARC9:AddPhrase("eft_weapon_9a91", "KBP 9Aw-91", "uwu")
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_9a91")
-SWEP.Description = [[The 9A-91 is a compact 9x39mm caliber assault rifle designed as a more technologically advanced analog and competitor of the SR-3 "Vikhr" assault rifle. Manufactured by Tula KBP Instrument Design Bureau.]]
+SWEP.Description = "eft_weapon_9a91_desc"
 
-SWEP.Class = ARC9:GetPhrase("eft_class_weapon_ar")
+SWEP.Class = "eft_class_weapon_ar"
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_ar")
 
 SWEP.Trivia = {
-    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = "Tula KBP Instrument Design Bureau",
-    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "9x39mm",
-    [ARC9:GetPhrase("eft_trivia_act") .. "3"] = ARC9:GetPhrase("eft_trivia_act_gas"),
-    [ARC9:GetPhrase("eft_trivia_country") .. "4"] = ARC9:GetPhrase("eft_trivia_country_ru"),
-    [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "1994"
+    ["eft_trivia_manuf1"] = "eft_trivia_manuf_kbp",
+    ["eft_trivia_cal2"] = "eft_trivia_calibr_9x39",
+    ["eft_trivia_act3"] = "eft_trivia_act_gas",
+    ["eft_trivia_country4"] = "eft_trivia_country_ru",
+    ["eft_trivia_year5"] = "1994"
 }
 
 -- SWEP.StandardPresets = {

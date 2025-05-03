@@ -8,16 +8,13 @@ SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Escape From Tarkov"
 
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_carb")
-SWEP.Class = ARC9:GetPhrase("eft_class_weapon_carb")
+SWEP.Class = "eft_class_weapon_carb"
 
-ARC9:AddPhrase("eft_weapon_vsk", "KBP VSK-94", "en")
-ARC9:AddPhrase("eft_weapon_vsk", "КБП ВСК-94", "ru")
-ARC9:AddPhrase("eft_weapon_vsk", "KBP WSK-94", "uwu")
-SWEP.PrintName = ARC9:GetPhrase("eft_weapon_vsk")
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_vsk94")
 
 SWEP.DefaultBodygroups = "010000000000000"
 
-SWEP.Description = [[The VSK-94 (Voyskovoy Snayperskiy Kompleks - "Military Sniper Complex") is a marksman rifle designed on the base of the 9A-91 assault rifle as a cheaper alternative to the VSS "Vintorez". The silencer, unlike the VSS, is not integrated, which allows the rifle to be used without it if needed. Manufactured by Tula KBP Instrument Design Bureau. ]]
+SWEP.Description = "eft_weapon_vsk94_desc"
 
 SWEP.Spread = 3.266 * ARC9.MOAToAcc
 

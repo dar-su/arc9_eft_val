@@ -8,19 +8,16 @@ SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Escape From Tarkov"
 
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_carb")
-SWEP.Class = ARC9:GetPhrase("eft_class_weapon_carb")
+SWEP.Class = "eft_class_weapon_carb"
 
-ARC9:AddPhrase("eft_weapon_sr3", "SR-3M", "en")
-ARC9:AddPhrase("eft_weapon_sr3", "СР-3М", "ru")
-ARC9:AddPhrase("eft_weapon_sr3", "SW-3M", "uwu")
-SWEP.PrintName = ARC9:GetPhrase("eft_weapon_sr3")
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_sr3m")
 
 SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_sr3m.mdl"
 -- SWEP.DefaultBodygroups = "10000000000000"
 
 SWEP.SaveBase = "arc9_eft_sr3" -- savebase getting pulled from asval, need to set back to default
 
-SWEP.Description = [[The SR-3M is a powerful assault rifle, featuring a very compact size comparable to submachine guns, but noticeably superior in terms of firepower due to the use of special armor-piercing ammunition. The main purpose of the SR-3M is to be used as a concealed carry weapon for Russian special forces units. Developed at TsNIITochMash and based on the AS VAL assault rifle.]]
+SWEP.Description = "eft_weapon_sr3m_desc"
 
 SWEP.Spread = 5.019 * ARC9.MOAToAcc
 

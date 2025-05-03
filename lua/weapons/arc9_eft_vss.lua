@@ -10,16 +10,13 @@ SWEP.Category = "ARC9 - Escape From Tarkov"
 SWEP.SaveBase = "arc9_eft_vss2" -- this gun got full rework so old presets aren't compatible
 
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_snip")
-SWEP.Class = ARC9:GetPhrase("eft_class_weapon_marks")
+SWEP.Class = "eft_class_weapon_marks"
 
-ARC9:AddPhrase("eft_weapon_vss", "VSS Vintorez", "en")
-ARC9:AddPhrase("eft_weapon_vss", "ВСС Винторез", "ru")
-ARC9:AddPhrase("eft_weapon_vss", "WSS Wintowez", "uwu")
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_vss")
 
 SWEP.DefaultBodygroups = "10000000000000"
 
-SWEP.Description = [[VSS (Vintovka Sniperskaya Specialnaya - "Special Sniper Rifle") is an integrally suppressed sniper rifle, designed in the 80s in the TsNIITochMash institute for the needs of special-purpose teams and task forces.]]
+SWEP.Description = "eft_weapon_vss_desc"
 
 SWEP.Spread = 3.266 * ARC9.MOAToAcc
 
